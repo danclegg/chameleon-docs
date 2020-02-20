@@ -4,20 +4,20 @@ User Interface
 Opening the UI
 ----------------
 
-To connect to the Chameleon Vision UI you will need to enter in the web address.
+To connect to the Chameleon Vision UI you will need to enter the device web address.
 The web address is the ``<coprocessor-IP>:<port>``.
-The port defaults to 5800 and the coprocessor's IP address will be in the form 10.TE.AM.XX.
+The port defaults to 5800 and the coprocessor's IP address will be in the form ``10.TE.AM.XX``.
 If you are testing on a desktop computer you can use ``localhost`` in place of the IP address.
-For example, an IP address of 10.15.77.13 and a port of 5800, the web address will be ``10.15.77.13:5800`.
+For example, an IP address of ``10.15.77.13`` and a port of ``5800``, the web address will be ``10.15.77.13:5800``.
 
 .. _learn-ui:
 
 Getting Familiar with the UI
 ------------------------------
 
-The user interface has two main tabs, you can switch between them in the top-right corner:
+The user interface has two main tabs, located in the top-right corner:
 
-- **Vision**: Allows teams to configure pipeline settings with a live preview.
+- **Vision**: For configuring pipeline settings with a live preview.
 - **Settings**: For configuring networking and camera settings.
 
 .. image:: /images/UI/homePage.PNG
@@ -42,21 +42,21 @@ The Vision tab displays the processed image in real-time to help teams tune and 
 
 There are five steps to configuring a vision pipeline:
 
-#. Camera and Pipleine Selection
+#. Camera and Pipeline Selection
 #. Input
 #. Threshold
-#. Conoturs
+#. Contours
 #. Output
 
 
 Camera and Pipeline Selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On the left side there is a dropdown labelled "Camera".
+On the left side, there is a dropdown labelled "Camera".
 This list contains all :ref:`detected cameras<detected-cameras>`.
 The pen icon can be used to rename the camera.
 
-On the right side there is a dropdown labelled "Pipeline".
+On the right side, there is a dropdown labelled "Pipeline".
 These pipelines contain different settings and they can be easily switched between.
 Any edited configurations will apply only to the selected pipeline.
 
@@ -82,7 +82,7 @@ The thresholding tab allows teams to adjust the Hue/Saturation/Value (HSV) thres
 This allows only parts of the images within the thresholds to be detected, such as when configured for vision tape.
 Teams can also enable erode and dilate for eliminating speckles.
 
-For a more in depth explanation of erode and dilate visit `opencv's page <https://docs.opencv.org/2.4/doc/tutorials/imgproc/erosion_dilatation/erosion_dilatation.html#morphological-operations>`_
+For a more in-depth explanation of erode and dilate visit `opencv's page <https://docs.opencv.org/2.4/doc/tutorials/imgproc/erosion_dilatation/erosion_dilatation.html#morphological-operations>`_
 
 
 .. image:: /images/UI/hsvPart1.PNG
@@ -97,7 +97,7 @@ For a more in depth explanation of erode and dilate visit `opencv's page <https:
 Contours
 ~~~~~~~~~
 
-The contours tab has sliders which constrain the contours which can be considered for sorting. Teams can adjust the minimum or maximum area, aspect ratio (the ratio of width to height of bounding rectangle of the object) or extent (the ratio of contour area to bounding rectangle area). This tab also allows teams to select only one target or to group two together. Another filtering option is Speckle rejection, it ignores small contours "speckles" compared to the largest contour seen.
+The contours tab has sliders that constrain the contours considered for sorting. Teams can adjust the minimum or maximum area, aspect ratio (the ratio of width to height of bounding rectangle of the object) or extent (the ratio of contour area to bounding rectangle area). This tab also allows teams to select only either one target or a group of two. Another filtering option is Speckle rejection, it ignores small contours "speckles" compared to the largest contour seen.
 
 .. image:: /images/UI/singleGroup.PNG
    :width: 600
@@ -111,7 +111,7 @@ The contours tab has sliders which constrain the contours which can be considere
 Output
 ~~~~~~~~
 
-The output tab controls how the contours which make it through thesholding and filtering are sent as the target. Teams can sort contours by leftmost/rightmost/topmost/bottommost, largest, smallest, or closest to the crosshair (centermost).
+The output tab controls how the contours passed through thresholding and filtering are sent as the target. Teams can sort contours by leftmost/rightmost/topmost/bottommost, largest, smallest, or closest to the crosshair (centermost).
 
 .. image:: /images/UI/rightmostSort.PNG
    :width: 600

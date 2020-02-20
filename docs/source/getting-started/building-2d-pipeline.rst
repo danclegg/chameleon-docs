@@ -29,7 +29,7 @@ Lowering the camera's exposure and brightness will darken the rest of the field 
 Step 2: :ref:`Threshold<learn-ui-threshold>`
 -----------------------------------------------
 
-In this step you will adjust the HSV threshold values.
+In this step, you will adjust the HSV threshold values.
 
 Hue-Saturation-Value (HSV) is a way of digitally represented colours, similar to Red-Green-Blue (RGB).
 However, HSV encodes the colour in terms of its hue, making it easier to filter out a certain colour.
@@ -46,7 +46,7 @@ We want to create a filter to select only pixels that are "greenish".
 Step 3: :ref:`Contours<learn-ui-contours>` 
 -----------------------------------------------
 
-Once the background has be filtered out we can treat the remaining white pixels as "contours".
+Once the background has been filtered out we can treat the remaining white pixels as "contours".
 Each contour has:
 
 * area
@@ -55,7 +55,7 @@ Each contour has:
 * width
 
 It is possible to filter out contours which do not meet the specifying criteria of the above properties.
-In 2016 the vision targets were a U shape, which had a different W/H ratio compared to the 2017 targets, which were rectangular.
+In 2016 the vision targets were a U shape, which had a different W/H ratio compared to the rectangular targets in 2017.
 
 Sometimes the vision targets can be pairs, such as in 2019, where both targets were on an angle.
 Chameleon Vision allows two contours to be merged into one contour.
@@ -65,7 +65,7 @@ The bounding rectangle of the contour will be drawn on the output.
 Step 4: :ref:`Output<learn-ui-output>`
 ------------------------------------------
 
-Depending on your camera's placement you might want the final contour/contours to be the topmost / buttommost / leftmost / rightmost / centermost
+Depending on your camera's placement you might want the final contour/contours to be the topmost / bottommost / leftmost / rightmost / centermost
 
 Now that we have built the pipeline, we want to receive the results in the RoboRIO.
 This information is sent via :ref:`NetworkTables<networktables>`.

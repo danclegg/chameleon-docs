@@ -3,7 +3,7 @@
 Contact Us
 ==============
 
-Bug reports / feature requests
+Bug reports/feature requests
 ----------------------------------
 
 | To report a bug or submit a feature request in Chameleon Vision, you can either:  
@@ -11,12 +11,12 @@ Bug reports / feature requests
 |   Or
 |   - `Contact the developers on Discord <https://discord.gg/rEu7fR8>`_ 
 
-| If you found an problem in this documentation, you can also `submit an issue on the Chameleon Vision Documentation GitHub <https://github.com/Chameleon-Vision/chameleon-docs/issues/new>`_
+| If you found a problem in this documentation, you can also `submit an issue on the Chameleon Vision Documentation GitHub <https://github.com/Chameleon-Vision/chameleon-docs/issues/new>`_
 
 Other information
 ---------------------
 
-| For getting other information about Chameleon Vision that may not have been covered in this documentation, you can `reach out to us on Discord <https://discord.gg/rEu7fR8>`_.
+| For other information about Chameleon Vision that may not have been covered in this documentation, you can `reach out to us on Discord <https://discord.gg/rEu7fR8>`_.
 
 Source Code
 ---------------

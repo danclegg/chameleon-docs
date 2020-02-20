@@ -2,7 +2,7 @@ Chameleon-Vision
 ================
 
 Chameleon Vision is free open-source software for FRC teams to use for
-vision proccesing on their robots.
+vision processing on their robots.
 
 .. toctree::
    :maxdepth: 2
